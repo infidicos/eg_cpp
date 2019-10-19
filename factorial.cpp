@@ -1,5 +1,5 @@
 #include <iostream>
-int fact(int);
+#include fact.cpp
 int main(){  
   int num;
   std::cout << "Enter the number of factorial: ";
@@ -8,11 +8,4 @@ int main(){
 	std::cout << "Enter the number of factorial: ";
   }
   return 0;
-}
-int fact(int val) {
-	int ret=1;
-	while(val>1){
-	  ret *= val--;
-	}
-	return ret;
-  }
+} 
