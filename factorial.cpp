@@ -1,5 +1,5 @@
 #include <iostream>
-#include fact.cpp
+#include "fact.h"
 int main(){  
   int num;
   std::cout << "Enter the number of factorial: ";
