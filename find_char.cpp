@@ -4,13 +4,14 @@ std::string::size_type find_char(const std::string& , char, std::string::size_ty
 int main(){
   std::cout << "What string do you want to find: ";
   std::string s;
-  std::cin >> s;
+  std::getline(std::cin,s);
+
   std::cout << "What character do you find: ";
   char c;
   std::cin >> c;
   std::string::size_type count;
   auto ret = find_char(s,c,count);
-  std :: cout << c <<" occurs " << " the first time at "<< ret << " and "<< count-1 << " times in remain of "<< s << std::endl;
+  std :: cout << c <<" occurs " << " the first time at "<< ret << " and "<< count-1 << " in remain of "<< s << std::endl;
   return 0;
 }
 std::string::size_type find_char(const std::string &s, char c, std::string::size_type &count){
