@@ -7,6 +7,6 @@ public:
 };
 int main(){
   std::cout << "Expression: ";
-  auto token;
+  Token token;
   return 0;
 }
