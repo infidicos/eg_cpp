@@ -32,6 +32,6 @@ Sales_data& Sales_data::combine(const Sales_data& trans){
 	return *this;
 }
 int Sales_data::totalSold(){return unitsSold;}
-double Sales_data::avgPrice(){return unitsSold==0 ? 0 : revenue/unitsSold;}
+double Sales_data::avgPrice(){return unitsSold ? revenue/unitsSold : 0;}
 double Sales_data::getRevenue(){return revenue;}
 #endif
